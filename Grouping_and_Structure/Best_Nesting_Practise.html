@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting in HTML</title>
+    <style>
+        .card{
+            border: 2px solid;
+            padding: auto;
+            margin-bottom: auto;
+            
+        }
+        .card1{
+            border: 2px solid;
+            padding: auto;
+            margin-bottom: auto;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>This is an <strong>important</strong> in html</p>
+    <p>This is my <strong>profile</strong> </p>
+
+    <div class="card">
+        <p>Para 
+            <strong>HI</strong> <br>This Looks good
+        </p>  
+    </div>
+    
+    <div class="card1">
+        <strong>HI
+            <p>Welcome</p>
+        </strong>  
+        <p>As above we can see that the both texts are bold and it is not a best practise</p>  
+    </div>
+
+    <!--For reference This code is without proper intendetion makes it less readable anyhow it doesn't make an impact on the web page but it is  difficulties to read -->
+     <ul> 
+        <li>
+            Fruits
+            <ul>
+        <li>Orange</li>
+                    <li>Mango</li>
+        </ul>
+            </li>
+     </ul> 
+
+    <!-- Use proper Hireachy that makes your code  more readable  -->
+    <ul>
+        <li>
+            Fruits
+            <ul>
+                <li>Orange</li>
+                <li>Mango</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
